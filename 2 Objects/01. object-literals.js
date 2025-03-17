@@ -4,17 +4,20 @@
 // ====================================================================================================================
 
 let Person = {
+
+    /* Properties */
     name: "Hasindu",
     profferedLanguage: "JavaScript",
+    
+    /* Methods */
     writeCode: function () {
         console.log(`${this.name} is writing ${this.profferedLanguage} code`);
     },
-    drinkCoffee() { // shorthand method definition
+    drinkCoffee() {
+        // shorthand method definition
         console.log(`${this.name} is drinking coffee`);
-    }
-}
-
-// In this case, Person is the object. name and profferedLanguage are the properties of the object. writeCode and drinkCoffee are the methods of the object.
+    },
+};
 
 // Accessing object properties (2 ways) and methods
 console.log(Person.name);
@@ -26,7 +29,3 @@ Person.drinkCoffee();
 // Delete a property from an object
 delete Person.profferedLanguage;
 console.log(Person);
-
-
-
-
