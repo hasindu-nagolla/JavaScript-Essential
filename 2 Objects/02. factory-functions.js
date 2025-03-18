@@ -4,7 +4,7 @@
 // =====================================================================================================================
 
 function createPerson(name, school) {
-    return{
+    return {
         name,
         school,
         goingToSchool() {
@@ -19,7 +19,7 @@ function createPerson(name, school) {
 student01 = createPerson("Hasindu", "Nalanda College"); // Create a new object using the factory function
 student02 = createPerson("Lakshan", "Dharmaraja College"); // Create a new object using the factory function
 
-console.log( student01.name)
+console.log(student01.name)
 student01.goingToSchool();
 
 
