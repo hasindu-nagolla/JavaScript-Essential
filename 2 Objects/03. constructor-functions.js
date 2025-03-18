@@ -17,5 +17,5 @@ function Programmer(name, age, preferredLanguage) {
 }
 
 const newProgrammer = new Programmer('John', 30, 'JavaScript'); // Instantiating an object
-console.log(newProgrammer); 
+console.log(newProgrammer);
 newProgrammer.writeCode(); // Calling method of the object  "newProgrammer"
