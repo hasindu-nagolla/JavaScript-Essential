@@ -9,8 +9,8 @@ function Programmer(name, preferredLanguage){
 
     // private method
     const drinkCoffee = function () {
-        console.log("Drinking coffee");
-    }
+        console.log(`Drinking coffee ${this.name}`);
+    }.bind(this); // .bind(this) is used to bind the constructor's context to the private method
 
     // public method
     this.takeBreak = function () {
