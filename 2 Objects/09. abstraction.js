@@ -19,3 +19,6 @@ function Programmer(name, preferredLanguage){
 }
 
 const programmer = new Programmer("hasii", "JavaScript");
+programmer.writeCode(); // Writing code in JavaScript
+// programmer.drinkCoffee(); // TypeError: programmer.drinkCoffee is not a function
+programmer.takeBreak(); // Drinking coffee
