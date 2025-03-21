@@ -1,21 +1,26 @@
-function Programmer(name, preferredLanguage){
-    this.name = name;
+function Programmer(name, preferredLanguage) {
+
+    // Private property
+    let privateName = name;
+    // Public property
     this.preferredLanguage = preferredLanguage;
 
-    // public method
+    // Public method
     this.writeCode = function () {
         console.log("Writing code in " + this.preferredLanguage);
     }
 
-    // private method
-    const drinkCoffee = function () {
-        console.log("Drinking coffee");
+    // Private method
+    let drinkCoffee = function () {
+        console.log("Drinking...");
     }
 
-    // public method
+    // public method that uses a closure
     this.takeBreak = function () {
         drinkCoffee();
     }
 }
 
 const programmer = new Programmer("hasii", "JavaScript");
+programmer.writeCode(); // Writing code in JavaScript
+programmer.takeBreak(); // Drinking...
