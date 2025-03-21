@@ -49,3 +49,7 @@ admin.fullName = "System Admin";
 console.log(admin.fullName); // System Admin
 console.log(user.fullName); // Hasindu Lakshan
 
+console.log("==========================================");
+for (let key in admin) {
+    console.log(key); // returns all properties & methods of admin, user
+}
