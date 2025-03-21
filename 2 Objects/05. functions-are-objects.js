@@ -11,7 +11,7 @@
 // Assigning a function to a variable
 // =============================================================================
 
-function greet(){
+function greet() {
     return "Hello!";
 }
 
@@ -33,11 +33,11 @@ sayName.call(user);
 // Pass a function as an argument to another function
 // =============================================================================
 
-function me(){
+function me() {
     console.log("My name is Hasii");
 }
 
-function executeFunc(fn){
+function executeFunc(fn) {
     fn(); // Calling the function that is passed as an argument
 }
 
@@ -47,8 +47,8 @@ executeFunc(me); // My name is Hasii
 // Function can return another function
 // =============================================================================
 
-function outerFunction(){
-    return function innerFunction(){
+function outerFunction() {
+    return function innerFunction() {
         console.log("Inner function is executed");
     }
 }

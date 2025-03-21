@@ -37,7 +37,7 @@ console.log(y); // 10 (unchanged)
 // => Array
 // => Function
 
-let obj1 = {name: "Hasii"};
+let obj1 = { name: "Hasii" };
 let obj2 = obj1; // Both obj1 and obj2 point to the same memory address
 
 obj1.name = "John"; // Modification to obj1 will affect to the obj2

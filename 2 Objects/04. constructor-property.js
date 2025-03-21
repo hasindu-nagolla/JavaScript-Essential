@@ -6,7 +6,7 @@
 
 // Constructor Property in user-defined objects
 
-function Person(name, age){
+function Person(name, age) {
     this.name = name;
     this.age = age;
 }
@@ -22,7 +22,7 @@ const arr = [1, 2, 3, 4, 5];
 console.log(arr.constructor);
 
 const obj = {};
-console.log(obj.constructor); 
+console.log(obj.constructor);
 
 const str = "Hello";
 console.log(str.constructor);
