@@ -119,3 +119,56 @@ Execution phase:
 x = 5
 greet()
 ```
+
+# Call Stack
+
+Execution contexts are managed using the **Call Stack**. Think **LIFO (Last In First Out)**.
+
+## Example
+
+```javascript
+function one() {
+    two();
+}
+
+function two() {
+    three();
+}
+
+function three() {
+    console.log("Done");
+}
+
+one();
+```
+
+### Stack:
+
+```javascript
+Global
+one()
+two()
+three()
+```
+
+Then:
+
+```javascript
+three removed
+two removed
+one removed
+Global remains
+```
+
+---
+
+# Why this matters in real-world engineering
+
+This is not theory.
+
+This explains:
+
+* **Hoisting** (Hoisting is a result of the memory creation phase before execution phase)
+* **Closures**
+* **Async behavior**
+* **Stack overflow**
