@@ -7,12 +7,12 @@ console.log(a); // will print 10 because the variable is now initialized with th
 // Explanation Task 02 - function calls and execution context (call stack)
 
 function first() {
-    console.log("first")
+  console.log("first");
 }
 
-function second () {
-    first();
-    console.log("second")
+function second() {
+  first();
+  console.log("second");
 }
 
 second();
