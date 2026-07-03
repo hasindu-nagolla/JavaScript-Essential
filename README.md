@@ -146,3 +146,105 @@ Sign up now at [https://stevencodecraft.com](https://stevencodecraft.com) and do
 -   [09:15:54 Running Promises in Parallel](https://www.youtube.com/watch?v=JMQitlRMZik&t=33354s)
 -   [09:23:04 Async and Await](https://www.youtube.com/watch?v=JMQitlRMZik&t=33784s)
 -   [09:28:06 Summary](https://www.youtube.com/watch?v=JMQitlRMZik&t=34086s)
+
+
+
+Phase 1 — Foundation Rebuild
+
+Add these folders before your current object section:
+
+00-foundation/
+│── 01-execution-context.js
+│── 02-variables.js
+│── 03-memory-model.js
+│── 04-scope.js
+│── 05-hoisting.js
+│── 06-functions.js
+│── 07-closures.js
+│── 08-this-keyword.js
+│── 09-value-vs-reference.js
+
+Why first?
+
+Because these are the actual foundations of everything you already studied.
+
+Your old repo jumped ahead.
+
+Now we fix that.
+
+
+Phase 2 — Functional JavaScript
+
+Add:
+
+07-functional-js/
+│── 01-map.js
+│── 02-filter.js
+│── 03-reduce.js
+│── 04-find.js
+│── 05-some-every.js
+│── 06-sort.js
+│── 07-pure-functions.js
+│── 08-immutability.js
+
+Very important for React.
+
+Phase 3 — Advanced Async
+
+Extend your async folder:
+
+06-async/
+│── 07-event-loop.js
+│── 08-microtask-vs-macrotask.js
+│── 09-fetch-api.js
+│── 10-error-handling.js
+│── 11-promise-all.js
+│── 12-promise-race.js
+
+Your current async section is good, but incomplete.
+
+Phase 4 — Browser Engineering
+
+Add:
+
+08-dom/
+│── 01-select-elements.js
+│── 02-modify-elements.js
+│── 03-events.js
+│── 04-event-delegation.js
+│── 05-forms.js
+│── 06-localstorage.js
+│── 07-fetch-ui.js
+
+This is where internship projects start becoming real.
+
+Phase 5 — Project Folder
+
+Add:
+
+projects/
+│── 01-counter-app/
+│── 02-todo-app/
+│── 03-weather-app/
+│── 04-github-user-search/
+│── 05-expense-tracker/
+│── 06-task-manager/
+
+This is critical.
+
+Concepts alone do not get internships.
+
+Projects do.
+
+Phase 6 — Interview Practice
+
+Add:
+
+interview-prep/
+│── 01-hoisting-questions.js
+│── 02-closure-questions.js
+│── 03-this-questions.js
+│── 04-event-loop-questions.js
+│── 05-promise-questions.js
+
+This becomes your revision vault.
