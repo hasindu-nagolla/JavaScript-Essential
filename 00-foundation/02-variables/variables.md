@@ -1,6 +1,6 @@
 # Variables in JavaScript
 
-A variable is simply a named memory location.
+A variable is a named memory location.
 
 ## Example
 
@@ -14,7 +14,7 @@ Think:
 age → memory address → 24
 ```
 
-JavaScript stores data and gives you a label to access it.
+JavaScript stores data and gives you a label to access it. (common for all programming languages)
 
 ---
 
@@ -26,9 +26,7 @@ JavaScript has:
 * `let`
 * `const`
 
-But they behave differently.
-
-This is critical.
+But they behave differently. This is critical.
 
 ---
 
@@ -62,9 +60,7 @@ Output:
 20
 ```
 
-Why dangerous?
-
-Because accidental redeclaration causes bugs.
+Why dangerous? bcz accidental redeclaration causes bugs.
 
 ## Scope example
 
@@ -82,9 +78,7 @@ Output:
 24
 ```
 
-Because `var` ignores block scope.
-
-This is dangerous.
+Bcz `var` ignores block scope. This is dangerous when developing large applications.
 
 ---
 
@@ -99,7 +93,7 @@ let score = 90;
 ### Characteristics
 
 * block-scoped
-* hoisted (but TDZ)
+* hoisted (but TDZ) - Temporal Dead Zone means the specific period during code execution where a variable exists but cannot be accessed
 * cannot redeclare in same scope
 * can reassign
 
@@ -134,7 +128,7 @@ Output:
 ReferenceError
 ```
 
-Good. Safer.
+This is good and safer.
 
 ---
 
@@ -183,21 +177,9 @@ user.name = "Lakshan";
 console.log(user);
 ```
 
-Works.
+It works. But why?
 
-Why?
-
-Because:
-
-`const` protects the variable reference.
-
-Not the object contents.
-
-The reference stays the same.
-
-Object internals can change.
-
-Very important.
+Bcz `const` protects the variable reference, not the object contents. The reference stays the same and the object internals can change. Very important.
 
 ---
 
@@ -241,9 +223,7 @@ const x = "Hasindu";
 const a = 1000;
 ```
 
-Production code must be readable.
-
-Readable code = maintainable code.
+Production code must be readable. Readable code = maintainable code.
 
 ---
 
@@ -256,13 +236,7 @@ console.log(a);
 let a = 10;
 ```
 
-Error.
-
-Even though `let` is hoisted.
-
-Because of TDZ.
-
-We will cover deeply in hoisting lesson.
+Error. Even though `let` is hoisted. Because of TDZ. We will cover deeply in hoisting lesson.
 
 ---
 
