@@ -17,7 +17,7 @@ console.log(y);
 // Example Task 03 - predict output
 
 const person = {
-    name: "Hasindu",
+  name: "Hasindu",
 };
 
 person.name = "Lakshan";
@@ -32,13 +32,12 @@ We can change the property but cannot assign a new address.
 // Example Task 04 - scope
 
 if (true) {
-    var a = 1;
-    let b = 2;
-    const c = 3;
+  var a = 1;
+  let b = 2;
+  const c = 3;
 
-    // console.log(b)
-    // console.log(c)
-
+  // console.log(b)
+  // console.log(c)
 }
 
 // it will be 1 bcz `var` is function scoped and ignores block scope
